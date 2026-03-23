@@ -28,25 +28,17 @@
             font-family: 'Inter', sans-serif;
             background: var(--bg);
             color: var(--text);
-            height: 100vh;
-            overflow: hidden;
+            min-height: 100vh;
             -webkit-font-smoothing: antialiased;
         }
 
         .page {
             display: flex;
             flex-direction: column;
-            height: 100vh;
-            overflow-y: auto;
+            min-height: 100vh;
             padding: 16px 24px;
             gap: 10px;
             position: relative;
-        }
-
-        .page > .block-hero,
-        .page > .block-intro,
-        .page > .block-cta {
-            flex-shrink: 0;
         }
 
         /* Background glows */
@@ -76,7 +68,7 @@
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 18px;
-            padding: 24px 36px 20px;
+            padding: 22px 36px 18px;
             position: relative;
             overflow: hidden;
         }
@@ -181,7 +173,6 @@
             display: flex;
             gap: 12px;
             flex: 1;
-            min-height: 180px;
         }
         .row-middle .block {
             flex: 1;
